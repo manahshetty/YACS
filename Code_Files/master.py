@@ -54,9 +54,7 @@ def random(request):
 	
 		#print(threading.current_thread().name, ": Task ", m_task['task_id'])
 		w_id = np.random.randint(0,3)
-		count = 0
-		while(config[w_id][1]==0 and count==0):
-			count+=1
+		while(config[w_id][1]==0):
 			continue
 		if(count):
 			break
