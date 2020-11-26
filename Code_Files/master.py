@@ -8,9 +8,9 @@ import requests
 import threading
 
 # Open all sockets:
-# 5000 - Listen to Job requests
-# 5001 - Listen to Job updates
-# 4000 - Send task to Worker 1
+# 5000 - Listen to Job requests 				-> jRSocket
+# 5001 - Listen to Job updates				-> jUSocket
+# 4000, 4001, 4002 - Send task to Worker 1, 2, 3		-> taskLaunchSocket
 
 jRSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 jRSocket.bind(("localhost", 5000))
@@ -49,10 +49,10 @@ def initConfig():
 def random(request):
 	print("I schedule at random.\n")
 	
-	
-	# Needs to look at config, pick a machine, decrement slot, send request to w_id.
+	# Needs to look at config of a worker, pick a machine, decrement slot, send task to w_id.
 	for m_task in request['map_tasks']:
-		print(threading.current_thread().name, ": Task ", m_task['task_id'])
+	
+		#print(threading.current_thread().name, ": Task ", m_task['task_id'])
 		w_id = np.random.randint(0,3)
 		count = 0
 		while(config[w_id][1]==0 and count==0):
@@ -60,7 +60,9 @@ def random(request):
 			continue
 		if(count):
 			break
-		# Found a w_id
+			
+		# Found a w_id with free slot
+		print(threading.current_thread().name, ": Sending to Worker ", w_id)
 		config[w_id][1]-=1
 		print("\t", threading.current_thread().name, "--> Decremented Config: ", config)
 		if(w_id == 0):
@@ -69,15 +71,10 @@ def random(request):
 			conn, addr = taskLaunchSocket2.accept()
 		if(w_id == 2):
 			conn, addr = taskLaunchSocket3.accept()
-		print(threading.current_thread().name, ": Connected to Port ", config[w_id][2])
+		
 		# Send job request to w_id
-		print(threading.current_thread().name, ": Connecting to Worker ", w_id)
-		print(threading.current_thread().name, ": Connected to Worker ", w_id)
 		message = json.dumps(m_task)
-		print("Message being sent: ", message)
 		conn.send(message.encode())
-		print(threading.current_thread().name, ": Sent request to Worker ", w_id)
-
 		conn.close()
 	
 		
@@ -88,9 +85,7 @@ print(config)
 def addressRequests():
 	while(1):
 		try:
-			print(threading.current_thread().name, ": Trying to connect to Port 5000")
 			conn, addr = jRSocket.accept()
-			print(threading.current_thread().name, ": Connected to Port 5000")
 		except:
 			break
 		r = conn.recv(1024)
@@ -101,28 +96,25 @@ def addressRequests():
 		request = json.loads(req)
 		conn.close()
 		print(threading.current_thread().name, ": Received Job Request")
-		print(request, "\n")
 		random(request)
 	print(threading.current_thread().name, ": Stopped Reading Requests")
 
+# Thread2 listens to task completion messages from workers and updates the free slots in config.
 def updateSlots():
-	#conn,addr = jUSocket.accept()
 	while(1):
 		try:
-			print(threading.current_thread().name, ": Trying to connect to Port 5001")
 			conn,addr = jUSocket.accept()
-			print(threading.current_thread().name, "Connected to Port 5001")
 		except:
-			print(threading.current_thread().name, "Could not connect to Port 5001")
 			break
 		w_id = conn.recv(1024).decode()
 		while(len(w_id)==0):
 			w_id = conn.recv(1024).decode()
+		print(threading.current_thread().name, ": Received update from: ", w_id)
 		config[int(w_id)-1][1]+=1
 		print("\t", threading.current_thread().name, "--> Updated Config: ", config)
-		print(threading.current_thread().name, ": Received update from: ", w_id)
 		conn.close()
-	print(threading.current_thread().name, ": Stopped receiving updates")
+		
+		
 t1 = threading.Thread(target = addressRequests, name = "Thread1")
 t2 = threading.Thread(target = updateSlots, name = "Thread2")
 t1.start()
