@@ -15,13 +15,14 @@ def execution():
 		#print(threading.current_thread().name, ": Entered Execution with ", e_pool)
 		#time.sleep(2)
 		for i in e_pool:
+			print(threading.current_thread().name, ": Entered Execution with ", i)
 			print(threading.current_thread().name, ": Task: ", i[1]['task_id'])
 			if(time.time() >= i[1]['end_time']):
 				w_id = i[0]
 				print(threading.current_thread().name, ": Removing Task: ", i[1]['task_id'])
 				e_pool.remove(i)
 				print(threading.current_thread().name, ": Calling update")
-				sendUpdate(w_id)					# Notify master of completion
+				sendUpdate(w_id)
 		time.sleep(1)
 		if(len(e_pool)==0):
 			exit_counter -= 1
@@ -41,20 +42,30 @@ def worker1(port, w_id):
 		print("Trying to connect to 4000")
 		taskLaunchSocket.connect(("localhost", port))
 		print("Connected to 4000")
-		r = taskLaunchSocket.recv(1024)					# Read task
+		r = taskLaunchSocket.recv(1024)
 		req = ""
 		while r:
 			req += r.decode()
 			r = taskLaunchSocket.recv(1024)
 		print(threading.current_thread().name, ": Request = ", req, "\n\n")
 		if(req):
-			task = json.loads(req)
-			print("\t\tWorker ", w_id, ": ", task['task_id'], "\n")
+			request = json.loads(req)
+			print("\t\tWorker ", w_id, ": ", request['task_id'], "\n")
 			
 			# Add request to the executing pool
-			task['end_time'] = time.time() + task['duration']
-			e_pool.append([w_id, task])
-		
+			request['end_time'] = time.time() + request['duration']
+			e_pool.append([w_id, request])
+			'''
+			print("Calling sendUpdate.")
+			start_time = time.time()
+			end_time = start_time + request["duration"]
+
+			while(end_time > time.time()):
+				continue
+			
+			sendUpdate(w_id)
+			print("Returned from Send update")
+			'''
 		else:
 			break
 		taskLaunchSocket.close()
@@ -65,13 +76,11 @@ e_pool = []
 
 with open(sys.argv[1]) as f:
 	config = json.load(f)
-
-# Create threads for each worker
+	
 t1 = threading.Thread(target = worker1, args = (config['workers'][0]['port'],config['workers'][0]['worker_id']))
 t2 = threading.Thread(target = worker1, args = (config['workers'][1]['port'],config['workers'][1]['worker_id']))
 t3 = threading.Thread(target = worker1, args = (config['workers'][2]['port'],config['workers'][2]['worker_id']))
 
-# Create a thread to execute the tasks
 t4 = threading.Thread(target = execution, name = "Thread 4")
 
 t1.start()
@@ -85,3 +94,5 @@ t2.join()
 t3.join()
 
 t4.join()
+#jUSocket.close()
+#taskLaunchSocket.close()
