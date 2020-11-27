@@ -4,95 +4,68 @@ import json
 import threading
 import time
 
-# Connect all sockets
-# 5001 - Send updates
-# 4000 - Receive tasks
-
 def execution():
 	exit_counter = 10      # So that it breaks from loop after 10s of no activity.
 				# TO BE REMOVED LATER!!!
 	while(exit_counter):
-		#print(threading.current_thread().name, ": Entered Execution with ", e_pool)
-		#time.sleep(2)
-		for i in e_pool:
-			print(threading.current_thread().name, ": Entered Execution with ", i)
-			print(threading.current_thread().name, ": Task: ", i[1]['task_id'])
-			if(time.time() >= i[1]['end_time']):
+		for i in e_pool:				# Check every task in e_pool
+			if(time.time() >= i[1]['end_time']):	# If current_time > end_time set earlier, task complete
 				w_id = i[0]
-				print(threading.current_thread().name, ": Removing Task: ", i[1]['task_id'])
-				e_pool.remove(i)
-				print(threading.current_thread().name, ": Calling update")
-				sendUpdate(w_id)
+				task_id = i[1]['task_id']
+				job_id = i[1]['job_id']
+				job_type = i[1]['job_type']
+				
+				e_lock.acquire()
+				e_pool.remove(i)		# Remove task from e_pool
+				e_lock.release()
+				
+				sendUpdate(job_id, task_id, w_id, job_type)	# Send update to Master
 		time.sleep(1)
 		if(len(e_pool)==0):
 			exit_counter -= 1
 
-def sendUpdate(w_id):
-	w_id = str(w_id)
-	jUSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+def sendUpdate(job_id, task_id, w_id, job_type):
+
+	info = {'job_id': job_id, 'job_type': job_type, 'task_id': task_id, 'w_id': w_id}	# Structure message to master
+	
+	jUSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)				# Connect to Master
 	jUSocket.connect(("localhost", 5001))
-	jUSocket.send(w_id.encode())
-	print("Sent update\n")
+	message = json.dumps(info)
+	jUSocket.send(message.encode())
 	jUSocket.close()
 	
 def worker1(port, w_id):
 	global e_pool
 	while(1):
 		taskLaunchSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		print("Trying to connect to 4000")
 		taskLaunchSocket.connect(("localhost", port))
-		print("Connected to 4000")
-		r = taskLaunchSocket.recv(1024)
+		r = taskLaunchSocket.recv(1024)					# Read task
 		req = ""
 		while r:
 			req += r.decode()
 			r = taskLaunchSocket.recv(1024)
-		print(threading.current_thread().name, ": Request = ", req, "\n\n")
 		if(req):
 			request = json.loads(req)
-			print("\t\tWorker ", w_id, ": ", request['task_id'], "\n")
 			
-			# Add request to the executing pool
-			request['end_time'] = time.time() + request['duration']
-			e_pool.append([w_id, request])
-			'''
-			print("Calling sendUpdate.")
-			start_time = time.time()
-			end_time = start_time + request["duration"]
-
-			while(end_time > time.time()):
-				continue
-			
-			sendUpdate(w_id)
-			print("Returned from Send update")
-			'''
+			request['end_time'] = time.time() + request['duration']	# Add task completion time to request dict
+			e_lock.acquire()
+			e_pool.append([w_id, request])				# Add request to the executing pool
+			e_lock.release()
 		else:
 			break
 		taskLaunchSocket.close()
-	print("Stop Launching tasks")
 
-
-e_pool = []
-
-with open(sys.argv[1]) as f:
-	config = json.load(f)
+# Maintain a pool of executing tasks
+# [<w_id>, {'task_id': x, 'job_id' : x, 'job_type': x, 'duration': x, 'end_time': x} ]
+e_pool = []				
+e_lock = threading.Lock()
 	
-t1 = threading.Thread(target = worker1, args = (config['workers'][0]['port'],config['workers'][0]['worker_id']))
-t2 = threading.Thread(target = worker1, args = (config['workers'][1]['port'],config['workers'][1]['worker_id']))
-t3 = threading.Thread(target = worker1, args = (config['workers'][2]['port'],config['workers'][2]['worker_id']))
-
-t4 = threading.Thread(target = execution, name = "Thread 4")
+t1 = threading.Thread(target = worker1, args = (int(sys.argv[1]),int(sys.argv[2])))	# Listens to tasks and adds to e_pool
+t2 = threading.Thread(target = execution, name = "Thread 2")				# Checks tasks in e_pool for completion,
+											# Sends updates to master on completion.
 
 t1.start()
 t2.start()
-t3.start()
-
-t4.start()
 
 t1.join()
 t2.join()
-t3.join()
-
-t4.join()
-#jUSocket.close()
-#taskLaunchSocket.close()
