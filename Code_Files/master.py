@@ -23,7 +23,10 @@ def initConfig():
 	
 def launchTask(w_id, job_id, job_type, task):
 
+	config_lock.acquire()
 	config[w_id][1]-=1					# Decrement the number of free slots
+	config_lock.release()
+	
 	if(w_id == 0):						# Choose socket/port based on Worker
 		conn, addr = taskLaunchSocket1.accept()
 	if(w_id == 1):
@@ -84,19 +87,21 @@ def pickScheduler(job_id, tasks, job_type):					# Calls scheduling algo based on
 def monitorReduce():
 	scheduled = []						# Keep track of reduce tasks that have already been schd.
 	while(1):
-		scheduling_pool_lock.acquire()
-		for job_id, status in scheduling_pool.items():
-			if(len(status[1]) == 0 and job_id not in scheduled):	# If all m_tasks are complete + not already been schd.
-				
-				pickScheduler(job_id, status[0], 'R')		# Pick scheduling algo based on CL arg
-				scheduled.append(job_id)			# Add task to list of schd. tasks
-				
-		scheduling_pool_lock.release()
+		if(len(scheduling_pool)>0):
+			scheduling_pool_lock.acquire()
+			for job_id, status in scheduling_pool.items():
+				if(len(status[1]) == 0 and job_id not in scheduled):	# If all m_tasks are complete + not already been schd.
+					
+					scheduled.append(job_id)			# Add task to list of schd. tasks
+					pickScheduler(job_id, status[0], 'R')		# Pick scheduling algo based on CL arg
+					
+			scheduling_pool_lock.release()
 		time.sleep(1)							# Wait for 1s before checking again.
 				
 	
 # Thread 1 addresses Job Requests
 def addressRequests():
+	global job_count
 	while(1):
 		try:
 			conn, addr = jRSocket.accept()
@@ -110,6 +115,10 @@ def addressRequests():
 		request = json.loads(req)					
 		conn.close()
 		
+		job_count_lock.acquire()
+		job_count += 1
+		job_count_lock.release()
+		
 		job_logs[request['job_id']] = time.time()			# Record job start time
 		
 		scheduling_pool_lock.acquire()				# Add job to scheduling_pool
@@ -120,6 +129,7 @@ def addressRequests():
 	
 
 def updateSlots():
+	global job_count
 	while(1):
 		try:
 			conn,addr = jUSocket.accept()
@@ -135,9 +145,12 @@ def updateSlots():
 		end_time = time.time()								# Record end time and add to task log
 		task_logs[update['task_id']][0] = end_time - task_logs[update['task_id']][0]
 		
+		config_lock.acquire()
 		config[update['w_id']-1][1]+=1						# Increment free slots on resp. worker
+		config_lock.release()
 		
 		if(update['job_type'] == 'M'):						# If it was a map task
+			
 			scheduling_pool_lock.acquire()
 			scheduling_pool[update['job_id']][1].remove(update['task_id'])	# Remove from resp job's m_task list
 			scheduling_pool_lock.release()
@@ -148,6 +161,7 @@ def updateSlots():
 		else:										# If it was a reduce task
 			for task in scheduling_pool[update['job_id']][0]:
 				if task['task_id'] == update['task_id']:
+					
 					scheduling_pool_lock.acquire()
 					scheduling_pool[update['job_id']][0].remove(task)	# Remove from resp job's r_task list
 					scheduling_pool_lock.release()
@@ -157,20 +171,31 @@ def updateSlots():
 												# Job completed
 				print("\n===========================================================================\n")
 				print("\t\t\t ******** COMPLETED JOB ", update['job_id'], "*********")
+				print("\n===========================================================================\n")
 				job_logs[update['job_id']] = end_time - job_logs[update['job_id']]	# Update duration of job
 				
 				scheduling_pool_lock.acquire()
 				scheduling_pool.pop(update['job_id'])				# Remove job from scheduling_pool
 				scheduling_pool_lock.release()
 
-				print("\nTASK LOGS: ", task_logs)
-				print("\nJOB LOGS: ", job_logs)
-				print("\n===========================================================================\n")
-		
+				job_count_lock.acquire()
+				job_count -= 1
+				job_count_lock.release()
+
+				if(len(scheduling_pool)==0):
+				#if(job_count == 0):						# Can use any If
+					print("\n===========================================================================\n")
+					print("\nTASK LOGS:\n", task_logs)
+					print("\nJOB LOGS:\n", job_logs)
+					print("\n===========================================================================\n")
+					print("\n\n############################################################################")
+					print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< EXIT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+					print("############################################################################\n")
 		conn.close()
 
 # Initialize Configuration.
-config = initConfig()		
+config = initConfig()
+config_lock = threading.Lock()		
 print(config)
 
 # Initialize Sockets
@@ -202,6 +227,9 @@ taskLaunchSocket3.listen(1)
 # Initialize time logs
 job_logs = {}			# <job_id> : time
 task_logs = {}			# <task_id> : [time, worker]
+
+job_count = 0
+job_count_lock = threading.Lock()
 
 # Initialize shared data structure.
 # Keeps record of job requests yet to complete exec
