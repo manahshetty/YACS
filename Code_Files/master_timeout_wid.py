@@ -156,8 +156,8 @@ def updateSlots():
 			u = conn.recv(1024).decode()
 		update = json.loads(update)
 		
-		end_time = time.time()								# Record end time and add to task log
-		task_logs[update['task_id']][0] = update['start_time'] - update['end_time'] # end_time - task_logs[update['task_id']][0]
+		#end_time = time.time()								# Record end time and add to task log
+		task_logs[update['task_id']][0] = update['end_time'] - update['start_time'] # end_time - task_logs[update['task_id']][0]
 
 		w_id = worker_id_to_index[update['w_id']]				# Convert the worker_id to index into config
 		
@@ -191,7 +191,7 @@ def updateSlots():
 				print("\n===========================================================================\n")
 				print("\t\t\t ******** COMPLETED JOB ", update['job_id'], "*********")
 				print("\n===========================================================================\n")
-				job_logs[update['job_id']] = end_time - job_logs[update['job_id']]	# Update duration of job
+				job_logs[update['job_id']] = update['end_time'] - job_logs[update['job_id']]	# Update duration of job
 				
 				scheduling_pool_lock.acquire()
 				scheduling_pool.pop(update['job_id'])				# Remove job from scheduling_pool
