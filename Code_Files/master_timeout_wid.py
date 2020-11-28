@@ -4,6 +4,8 @@ import socket
 import time
 import random
 import numpy as np
+import pandas as pd 
+import matplotlib.pyplot as plt 
 import requests
 import threading
 import copy
@@ -155,7 +157,7 @@ def updateSlots():
 		update = json.loads(update)
 		
 		end_time = time.time()								# Record end time and add to task log
-		task_logs[update['task_id']][0] = end_time - task_logs[update['task_id']][0]
+		task_logs[update['task_id']][0] = update['start_time'] - update['end_time'] # end_time - task_logs[update['task_id']][0]
 
 		w_id = worker_id_to_index[update['w_id']]				# Convert the worker_id to index into config
 		
@@ -283,6 +285,59 @@ taskLaunchSocket2.close()
 taskLaunchSocket3.close()
 
 print("\n===========================================================================\n")
+
+t_logs = {'job_id': [],'task_id': [], 'time_taken': [], 'worker':[]}
+for key,value in task_logs.items():
+	job = key.split("_")[0]
+	t_logs["job_id"].append(job)
+	t_logs['task_id'].append(key)
+	t_logs['time_taken'].append(value[0])
+	t_logs['worker'].append(value[1])
+
+print('Mean time taken for task completion:', np.mean(t_logs['time_taken']))
+print('Median time taken for task completion:',np.median(t_logs['time_taken']))
+
+tasklogs_df = pd.DataFrame(t_logs,index=None,columns=['job_id','task_id','time_taken','worker'])
+
+n_tasks_per_worker = sorted(tasklogs_df.worker.value_counts())
+timetaken_per_worker = [sum(tasklogs_df[tasklogs_df['worker']==i]['time_taken']) for i in n_tasks_per_worker]
+worker = [1,2,3]
+
+
+# x = np.arange(len(labels))  # the label locations
+# width = 0.35  # the width of the bars
+
+# fig, ax = plt.subplots()
+# rects1 = ax.bar(x - width/2, men_means, width, label='Men')
+# rects2 = ax.bar(x + width/2, women_means, width, label='Women')
+
+# # Add some text for labels, title and custom x-axis tick labels, etc.
+# ax.set_ylabel('Scores')
+# ax.set_title('Scores by group and gender')
+# ax.set_xticks(x)
+# ax.set_xticklabels(labels)
+# ax.legend()
+
+
+def autolabel(rects):
+    """Attach a text label above each bar in *rects*, displaying its height."""
+    for rect in rects:
+        height = rect.get_height()
+        ax.annotate('{}'.format(height),
+                    xy=(rect.get_x() + rect.get_width() / 2, height),
+                    xytext=(0, 3),  # 3 points vertical offset
+                    textcoords="offset points",
+                    ha='center', va='bottom')
+
+
+autolabel(rects1)
+autolabel(rects2)
+
+fig.tight_layout()
+
+plt.show()
+
+
 print("\nTASK LOGS:\n", task_logs)
 print("\nJOB LOGS:\n", job_logs)
 print("\n===========================================================================\n")

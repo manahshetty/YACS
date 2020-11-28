@@ -8,8 +8,10 @@ def execution():
 	exit_counter = 10      # So that it breaks from loop after 10s of no activity.
 				# TO BE REMOVED LATER!!!
 	while(exit_counter):
-		for i in e_pool:				# Check every task in e_pool
-			if(time.time() >= i[1]['end_time']):	# If current_time > end_time set earlier, task complete
+		for i in e_pool:
+			cur_time = time.time()				# Check every task in e_pool
+			if(cur_time >= i[1]['end_time']):	# If current_time > end_time set earlier, task complete
+				i[1]['end_time'] = cur_time
 				w_id = i[0]
 				task_id = i[1]['task_id']
 				job_id = i[1]['job_id']
@@ -19,14 +21,14 @@ def execution():
 				e_pool.remove(i)		# Remove task from e_pool
 				e_lock.release()
 				
-				sendUpdate(job_id, task_id, w_id, job_type)	# Send update to Master
+				sendUpdate(job_id, task_id, w_id, job_type, i[1]['start_time'], i[1]['end_time'])	# Send update to Master
 		time.sleep(1)
 		if(len(e_pool)==0):
 			exit_counter -= 1
 
-def sendUpdate(job_id, task_id, w_id, job_type):
+def sendUpdate(job_id, task_id, w_id, job_type, start_time, end_time):
 
-	info = {'job_id': job_id, 'job_type': job_type, 'task_id': task_id, 'w_id': w_id}	# Structure message to master
+	info = {'job_id': job_id, 'job_type': job_type, 'task_id': task_id, 'w_id': w_id, 'start_time': start_time, 'end_time': end_time}	# Structure message to master
 	
 	jUSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)				# Connect to Master
 	jUSocket.connect(("localhost", 5001))
@@ -46,8 +48,8 @@ def worker1(port, w_id):
 			r = taskLaunchSocket.recv(1024)
 		if(req):
 			request = json.loads(req)
-			
-			request['end_time'] = time.time() + request['duration']	# Add task completion time to request dict
+			request['start_time'] = time.time()
+			request['end_time'] = request['start_time'] + request['duration']	# Add task completion time to request dict
 			e_lock.acquire()
 			e_pool.append([w_id, request])				# Add request to the executing pool
 			e_lock.release()
