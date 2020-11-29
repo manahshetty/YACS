@@ -1,0 +1,3531 @@
+[{'worker_id': 1, 'slots': 5, 'port': 4000}, {'worker_id': 2, 'slots': 7, 'port': 4001}, {'worker_id': 3, 'slots': 3, 'port': 4002}] 
+
+Config is now:  [{'worker_id': 1, 'slots': 4}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 3}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+1_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+2_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 3}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+1_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+0_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+4_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+3_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+2_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  2 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+3_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+4_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+0_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  0 ***************
+
+ ========================================================================================================= 
+
+5_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+5_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+1_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 3}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  1 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+4_M3  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+4_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+3_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  3 ***************
+
+ ========================================================================================================= 
+
+5_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+6_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+6_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+5_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  5 ***************
+
+ ========================================================================================================= 
+
+4_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+7_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+6_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 3}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+4_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  4 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+8_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+6_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+9_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+9_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+7_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+7_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  7 ***************
+
+ ========================================================================================================= 
+
+8_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  8 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+10_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+6_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  6 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+10_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+10_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+11_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+12_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+12_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+12_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+9_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  9 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+13_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+12_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+13_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+13_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+11_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  11 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+10_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  10 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+12_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+14_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+14_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+14_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+12_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  12 ***************
+
+ ========================================================================================================= 
+
+15_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+14_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+15_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 3}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+15_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+13_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+13_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  13 ***************
+
+ ========================================================================================================= 
+
+16_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+15_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+14_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+17_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+14_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  14 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+20_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+18_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+15_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+15_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  15 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+19_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+22_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+16_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  16 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+21_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+22_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+20_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+21_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+17_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+18_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  18 ***************
+
+ ========================================================================================================= 
+
+23_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+17_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  17 ***************
+
+ ========================================================================================================= 
+
+19_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+22_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+20_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  20 ***************
+
+ ========================================================================================================= 
+
+21_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  21 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+24_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+24_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+19_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  19 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+23_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  23 ***************
+
+ ========================================================================================================= 
+
+24_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+25_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+22_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+24_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+22_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  22 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+25_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+25_M3  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+27_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+26_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+26_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+25_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+27_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+26_M3  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+26_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+24_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  24 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+28_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+28_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+27_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  27 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+29_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+29_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+26_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  26 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+28_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  28 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+25_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  25 ***************
+
+ ========================================================================================================= 
+
+30_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+29_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+31_M3  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+30_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+31_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+32_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+29_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  29 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+31_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+32_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+30_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+31_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+30_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  30 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+32_M3  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+33_M3  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+32_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+33_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+33_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+31_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+33_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+36_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+31_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  31 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+34_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+35_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+36_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+35_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+32_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+32_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  32 ***************
+
+ ========================================================================================================= 
+
+34_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  34 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+37_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+37_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+38_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+33_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  33 ***************
+
+ ========================================================================================================= 
+
+36_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+37_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+38_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+40_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+37_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+35_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  35 ***************
+
+ ========================================================================================================= 
+
+41_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+36_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  36 ***************
+
+ ========================================================================================================= 
+
+38_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+39_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+42_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+40_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+41_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  41 ***************
+
+ ========================================================================================================= 
+
+42_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+37_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+42_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+37_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  37 ***************
+
+ ========================================================================================================= 
+
+38_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  38 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+42_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+39_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+39_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  39 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+43_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+43_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+44_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+44_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+44_M3  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+44_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+46_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+45_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+47_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+40_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  40 ***************
+
+ ========================================================================================================= 
+
+43_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+46_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+42_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+42_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  42 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+43_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  43 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+47_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+44_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  44 ***************
+
+ ========================================================================================================= 
+
+48_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+48_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+46_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+45_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  45 ***************
+
+ ========================================================================================================= 
+
+48_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+46_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  46 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+49_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+47_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+51_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+49_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+49_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+51_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+47_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  47 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+50_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+51_M3  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+51_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+48_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  48 ***************
+
+ ========================================================================================================= 
+
+53_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+52_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+52_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+54_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+49_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  49 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+54_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+50_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+56_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+50_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  50 ***************
+
+ ========================================================================================================= 
+
+56_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+55_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+54_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+51_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+51_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  51 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+57_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+52_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+53_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+57_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+53_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  53 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+57_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+57_M3  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+52_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  52 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+54_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+58_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+56_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+58_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+54_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  54 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+55_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  55 ***************
+
+ ========================================================================================================= 
+
+57_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  57 ***************
+
+ ========================================================================================================= 
+
+59_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+61_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+56_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  56 ***************
+
+ ========================================================================================================= 
+
+59_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+59_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+60_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+58_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  58 ***************
+
+ ========================================================================================================= 
+
+62_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+62_M3  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+61_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+62_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+61_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+59_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  59 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+62_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+60_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  60 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+63_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+65_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+64_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+66_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+65_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+65_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+66_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+66_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+61_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  61 ***************
+
+ ========================================================================================================= 
+
+64_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+66_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+62_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  62 ***************
+
+ ========================================================================================================= 
+
+68_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+67_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+63_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  63 ***************
+
+ ========================================================================================================= 
+
+64_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  64 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+65_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+67_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+70_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+65_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  65 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+68_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+70_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+66_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+69_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+66_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  66 ***************
+
+ ========================================================================================================= 
+
+71_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+71_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+72_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 0}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 0}, {'worker_id': 3, 'slots': 3}] 
+
+
+71_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+72_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+67_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+73_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+71_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+72_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+68_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+70_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  70 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+67_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  67 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+68_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  68 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+69_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  69 ***************
+
+ ========================================================================================================= 
+
+73_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+72_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+74_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+76_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+74_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+75_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+73_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+75_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+76_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+71_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  71 ***************
+
+ ========================================================================================================= 
+
+77_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+76_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+76_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+78_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+77_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+77_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+78_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+73_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  73 ***************
+
+ ========================================================================================================= 
+
+72_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  72 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+79_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+75_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+78_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+78_M3  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+75_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  75 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+74_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+77_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+74_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  74 ***************
+
+ ========================================================================================================= 
+
+79_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+77_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  77 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+76_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  76 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+80_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+79_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+78_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  78 ***************
+
+ ========================================================================================================= 
+
+79_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+80_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+80_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+81_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+81_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+82_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+80_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+81_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+81_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+79_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+82_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+82_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+83_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+80_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  80 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+79_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  79 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+84_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+82_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+84_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+84_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+84_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+81_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  81 ***************
+
+ ========================================================================================================= 
+
+86_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+82_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  82 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+83_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  83 ***************
+
+ ========================================================================================================= 
+
+85_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+85_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+86_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+85_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+86_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+86_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+85_M3  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+84_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  84 ***************
+
+ ========================================================================================================= 
+
+87_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+88_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+90_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+90_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+88_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+89_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+85_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+89_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+91_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+85_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  85 ***************
+
+ ========================================================================================================= 
+
+86_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  86 ***************
+
+ ========================================================================================================= 
+
+91_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+91_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+87_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  87 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+91_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+93_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+88_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  88 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+89_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+92_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+89_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  89 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+93_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+94_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+93_M0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+91_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  91 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+90_R0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+92_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+94_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+90_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  90 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+94_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+92_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  92 ***************
+
+ ========================================================================================================= 
+
+95_M3  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+95_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+95_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+95_M2  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+93_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  93 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+96_M1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 1}, {'worker_id': 3, 'slots': 3}] 
+
+
+96_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+97_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+94_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+97_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+98_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+94_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  94 ***************
+
+ ========================================================================================================= 
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+98_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+97_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+98_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+99_M0  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 0}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+95_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 2}, {'worker_id': 3, 'slots': 3}] 
+
+
+95_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 1}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  95 ***************
+
+ ========================================================================================================= 
+
+96_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 2}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+98_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 3}, {'worker_id': 2, 'slots': 3}, {'worker_id': 3, 'slots': 3}] 
+
+
+96_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 3}, {'worker_id': 2, 'slots': 4}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  96 ***************
+
+ ========================================================================================================= 
+
+98_R1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 3}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  98 ***************
+
+ ========================================================================================================= 
+
+99_M2  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 4}, {'worker_id': 2, 'slots': 5}, {'worker_id': 3, 'slots': 3}] 
+
+
+99_M1  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 4}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+97_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 5}, {'worker_id': 2, 'slots': 6}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  97 ***************
+
+ ========================================================================================================= 
+
+99_M3  freed from Worker:  2
+Config is now:  [{'worker_id': 1, 'slots': 5}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 4}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+Config is now:  [{'worker_id': 1, 'slots': 3}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+99_R0  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 4}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+99_R1  freed from Worker:  1
+Config is now:  [{'worker_id': 1, 'slots': 5}, {'worker_id': 2, 'slots': 7}, {'worker_id': 3, 'slots': 3}] 
+
+
+
+ ========================================================================================================= 
+
+				 *************** COMPLETED JOB  99 ***************
+
+ ========================================================================================================= 
+
+
+...
+
+...
+
+ ========================================================================================================= 
+
+
+TASK LOGS:
+ {'0_M0': [3.0062947273254395, 1], '1_M0': [1.0018694400787354, 1], '1_M1': [2.00399112701416, 1], '2_M0': [1.00225830078125, 1], '3_M0': [3.0014779567718506, 1], '3_M1': [4.002304553985596, 1], '2_R0': [2.5537610054016113, 1], '1_R0': [4.558162689208984, 1], '4_M0': [1.2260758876800537, 2], '0_R0': [2.553574323654175, 1], '4_M1': [2.2267141342163086, 2], '4_M2': [4.228480815887451, 2], '4_M3': [3.5237255096435547, 1], '5_M0': [1.519108772277832, 1], '3_R0': [3.5548171997070312, 1], '5_M1': [1.2201333045959473, 2], '5_R0': [4.55484414100647, 1], '5_R1': [1.5491394996643066, 1], '6_M0': [3.3422927856445312, 1], '6_M1': [1.041092872619629, 2], '6_M2': [4.343323230743408, 1], '4_R0': [4.552673101425171, 1], '4_R1': [2.54773211479187, 1], '7_M0': [3.0024561882019043, 2], '8_M0': [3.153351306915283, 2], '9_M0': [4.455080032348633, 1], '9_M1': [3.1536874771118164, 2], '6_R0': [1.5473649501800537, 1], '6_R1': [4.552175045013428, 1], '7_R0': [2.548845052719116, 1], '7_R1': [2.250361919403076, 2], '10_M0': [3.0698442459106445, 2], '10_M1': [4.369099140167236, 1], '8_R0': [1.5451791286468506, 1], '10_M2': [3.068493604660034, 2], '9_R0': [4.550231218338013, 1], '11_M0': [3.066649913787842, 2], '12_M0': [3.3200833797454834, 1], '12_M1': [3.0216994285583496, 2], '12_M2': [4.32081937789917, 1], '12_M3': [1.0149452686309814, 2], '13_M0': [4.318348169326782, 1], '10_R0': [4.550969123840332, 1], '13_M1': [2.0152676105499268, 2], '11_R0': [2.5458967685699463, 1], '13_M2': [2.0143964290618896, 2], '14_M0': [4.015170335769653, 2], '14_M1': [3.3114428520202637, 1], '12_R0': [3.5464277267456055, 1], '14_M2': [4.013595819473267, 2], '12_R1': [1.2420990467071533, 2], '14_M3': [2.0108349323272705, 2], '15_M0': [3.3112266063690186, 1], '15_M1': [2.308319568634033, 1], '13_R0': [3.5447328090667725, 1], '15_M2': [3.008897542953491, 2], '13_R1': [3.242098331451416, 2], '15_M3': [4.00949764251709, 2], '16_M0': [3.3078484535217285, 1], '17_M0': [4.005748510360718, 2], '14_R0': [2.5403542518615723, 1], '14_R1': [3.540731191635132, 1], '18_M0': [4.306623220443726, 1], '19_M0': [4.337660074234009, 1], '16_R0': [4.544199466705322, 1], '20_M0': [2.004849672317505, 2], '15_R0': [1.5355381965637207, 1], '21_M0': [3.7740612030029297, 2], '15_R1': [1.2325022220611572, 2], '21_M1': [3.7742419242858887, 2], '22_M0': [1.070204257965088, 1], '17_R0': [4.54270339012146, 1], '17_R1': [3.5396804809570312, 1], '22_M1': [1.7680466175079346, 2], '18_R0': [3.2334535121917725, 2], '20_R0': [1.5334277153015137, 1], '20_R1': [4.539297342300415, 1], '22_M2': [3.7717130184173584, 2], '19_R0': [2.5353901386260986, 1], '23_M0': [1.7666728496551514, 2], '19_R1': [4.236806631088257, 2], '24_M0': [2.7695200443267822, 2], '24_M1': [3.0727720260620117, 1], '21_R0': [1.525317907333374, 1], '24_M2': [4.774918556213379, 2], '23_R0': [2.526005983352661, 1], '24_M3': [2.7701187133789062, 2], '25_M0': [3.072749137878418, 1], '22_R0': [3.528860330581665, 1], '22_R1': [2.5268516540527344, 1], '25_M1': [3.7708661556243896, 2], '25_M2': [4.772049427032471, 2], '25_M3': [3.0697412490844727, 1], '26_M0': [2.7667815685272217, 2], '26_M1': [3.0701632499694824, 1], '26_M2': [3.771244525909424, 2], '26_M3': [3.0684289932250977, 1], '27_M0': [1.0631814002990723, 1], '24_R0': [3.527400255203247, 1], '27_M1': [1.7638330459594727, 2], '28_M0': [2.7636096477508545, 2], '28_M1': [3.061553716659546, 1], '29_M0': [4.06330680847168, 1], '29_M1': [2.7615768909454346, 2], '25_R0': [4.5309460163116455, 1], '27_R0': [1.5232391357421875, 1], '26_R0': [1.5253186225891113, 1], '30_M0': [4.90302848815918, 2], '28_R0': [1.525866985321045, 1], '30_M1': [2.898617744445801, 2], '31_M0': [4.199978828430176, 1], '29_R0': [2.527754068374634, 1], '29_R1': [4.5317840576171875, 1], '31_M1': [4.9005513191223145, 2], '31_M2': [4.898975133895874, 2], '31_M3': [1.1908767223358154, 1], '32_M0': [1.8904030323028564, 2], '32_M1': [3.1933131217956543, 1], '32_M2': [3.89359450340271, 2], '32_M3': [3.192192792892456, 1], '33_M0': [4.1933677196502686, 1], '30_R0': [1.5293591022491455, 1], '33_M1': [4.892432928085327, 2], '30_R1': [1.2283058166503906, 2], '33_M2': [2.8885698318481445, 2], '33_M3': [1.1860854625701904, 1], '34_M0': [3.8876702785491943, 2], '35_M0': [4.190457820892334, 1], '35_M1': [5.1909120082855225, 1], '31_R0': [1.5314459800720215, 1], '31_R1': [2.5333080291748047, 1], '36_M0': [1.8809747695922852, 2], '32_R0': [4.53760552406311, 1], '36_M1': [2.88374400138855, 2], '32_R1': [3.233980178833008, 2], '37_M0': [4.886359453201294, 2], '37_M1': [4.187363624572754, 1], '33_R0': [4.537861347198486, 1], '37_M2': [4.886268138885498, 2], '34_R0': [1.5322940349578857, 1], '37_M3': [4.886329650878906, 2], '35_R0': [4.539057731628418, 1], '38_M0': [1.8807916641235352, 2], '36_R0': [4.23668098449707, 2], '36_R1': [1.533665418624878, 1], '38_M1': [1.8814775943756104, 2], '38_M2': [4.186898946762085, 1], '39_M0': [3.8822176456451416, 2], '40_M0': [1.1795084476470947, 1], '40_M1': [3.8815975189208984, 2], '41_M0': [1.179208517074585, 1], '42_M0': [3.313701868057251, 1], '42_M1': [2.3114731311798096, 1], '37_R0': [3.539545774459839, 1], '37_R1': [2.5371930599212646, 1], '42_M2': [3.0114388465881348, 2], '41_R0': [1.23403000831604, 2], '42_M3': [3.0134084224700928, 2], '43_M0': [4.313082695007324, 1], '38_R0': [1.5075771808624268, 1], '43_M1': [3.01192307472229, 2], '39_R0': [1.2083377838134766, 2], '39_R1': [1.5055158138275146, 1], '44_M0': [3.010197877883911, 2], '44_M1': [3.306300163269043, 1], '40_R0': [4.509788274765015, 1], '44_M2': [3.006040096282959, 2], '44_M3': [2.302781343460083, 1], '42_R0': [4.508447647094727, 1], '45_M0': [3.0059151649475098, 2], '42_R1': [4.209859848022461, 2], '46_M0': [3.007225751876831, 2], '46_M1': [1.3004279136657715, 1], '43_R0': [1.501917839050293, 1], '43_R1': [3.505640745162964, 1], '47_M0': [1.0015757083892822, 2], '44_R0': [3.5052053928375244, 1], '47_M1': [3.0050253868103027, 2], '45_R0': [3.5030341148376465, 1], '48_M0': [3.003938674926758, 2], '48_M1': [2.298949718475342, 1], '46_R0': [3.5036849975585938, 1], '48_M2': [3.0032548904418945, 2], '46_R1': [1.2017641067504883, 2], '49_M0': [3.002194881439209, 2], '49_M1': [4.302084684371948, 1], '47_R0': [2.4998273849487305, 1], '47_R1': [4.50322151184082, 1], '49_M2': [4.00134539604187, 2], '50_M0': [4.001163482666016, 2], '51_M0': [1.2921216487884521, 1], '48_R0': [4.502136468887329, 1], '51_M1': [1.9960012435913086, 2], '51_M2': [2.995656728744507, 2], '51_M3': [2.291886329650879, 1], '52_M0': [4.295346260070801, 1], '52_M1': [2.992638349533081, 2], '53_M0': [2.289073944091797, 1], '49_R0': [3.5016067028045654, 1], '54_M0': [2.9922986030578613, 2], '50_R0': [3.5001351833343506, 1], '54_M1': [2.99183988571167, 2], '50_R1': [3.19956374168396, 2], '54_M2': [3.9932706356048584, 2], '55_M0': [3.2892398834228516, 1], '56_M0': [2.2861788272857666, 1], '51_R0': [3.497060775756836, 1], '56_M1': [1.9853579998016357, 2], '57_M0': [3.840768814086914, 1], '51_R1': [3.197023391723633, 2], '57_M1': [4.544692039489746, 2], '57_M2': [3.839134693145752, 1], '57_M3': [4.839526891708374, 1], '52_R0': [3.1958541870117188, 2], '52_R1': [4.198436975479126, 2], '53_R0': [2.49190092086792, 1], '53_R1': [1.1916918754577637, 2], '58_M0': [3.768709182739258, 2], '58_M1': [4.066250324249268, 1], '54_R0': [2.490037202835083, 1], '54_R1': [4.195485830307007, 2], '55_R0': [4.491254091262817, 1], '56_R0': [5.492492914199829, 1], '59_M0': [4.796817302703857, 2], '56_R1': [1.1843020915985107, 2], '59_M1': [4.798381090164185, 2], '59_M2': [5.092468976974487, 1], '57_R0': [2.4822580814361572, 1], '60_M0': [4.796141862869263, 2], '58_R0': [4.484190225601196, 1], '61_M0': [1.7888059616088867, 2], '61_M1': [4.794128656387329, 2], '61_M2': [4.792898893356323, 2], '62_M0': [4.08801794052124, 1], '62_M1': [2.084284543991089, 1], '62_M2': [4.790947914123535, 2], '62_M3': [2.082319974899292, 1], '59_R0': [3.4802706241607666, 1], '63_M0': [4.791453838348389, 2], '60_R0': [3.47912859916687, 1], '64_M0': [4.791600704193115, 2], '65_M0': [4.086256980895996, 1], '65_M1': [4.788269519805908, 2], '65_M2': [4.084453821182251, 1], '66_M0': [2.781041383743286, 2], '66_M1': [4.0805418491363525, 1], '61_R0': [4.481379508972168, 1], '66_M2': [4.783983469009399, 2], '62_R0': [4.480827569961548, 1], '66_M3': [1.7789599895477295, 2], '63_R0': [4.479273080825806, 1], '67_M0': [3.7811503410339355, 2], '64_R0': [1.4728684425354004, 1], '67_M1': [4.782698392868042, 2], '64_R1': [3.1769816875457764, 2], '68_M0': [4.782861232757568, 2], '68_M1': [1.072666883468628, 1], '65_R0': [2.473109006881714, 1], '65_R1': [3.474128484725952, 1], '69_M0': [4.780625343322754, 2], '66_R0': [3.4715311527252197, 1], '66_R1': [4.472797393798828, 1], '70_M0': [1.7731058597564697, 2], '70_M1': [1.7733252048492432, 2], '71_M0': [4.074461936950684, 1], '71_M1': [4.775877475738525, 2], '71_M2': [2.0694429874420166, 1], '67_R0': [4.471794128417969, 1], '71_M3': [4.773672342300415, 2], '67_R1': [5.174644947052002, 2], '72_M0': [2.7692577838897705, 2], '72_M1': [1.0647854804992676, 1], '68_R0': [3.4695589542388916, 1], '68_R1': [4.470553874969482, 1], '72_M2': [2.7694954872131348, 2], '69_R0': [4.171025037765503, 2], '70_R0': [2.4673120975494385, 1], '72_M3': [4.772401809692383, 2], '73_M0': [1.0650146007537842, 1], '73_M1': [2.768815040588379, 2], '74_M0': [3.7699198722839355, 2], '74_M1': [4.067975282669067, 1], '75_M0': [5.069673538208008, 1], '71_R0': [5.472986936569214, 1], '75_M1': [3.7696034908294678, 2], '76_M0': [3.567699670791626, 1], '76_M1': [5.572002649307251, 1], '76_M2': [1.2638192176818848, 2], '76_M3': [3.268899917602539, 2], '73_R0': [1.166116714477539, 2], '77_M0': [3.2682948112487793, 2], '77_M1': [1.5633776187896729, 1], '73_R1': [4.172208786010742, 2], '77_M2': [2.2651240825653076, 2], '78_M0': [2.5652472972869873, 1], '78_M1': [1.5623915195465088, 1], '78_M2': [4.27037501335144, 2], '78_M3': [4.568500995635986, 1], '72_R0': [2.167966365814209, 2], '74_R0': [5.474198341369629, 1], '74_R1': [4.174082517623901, 2], '75_R0': [2.4678854942321777, 1], '75_R1': [3.470416307449341, 1], '79_M0': [1.9776105880737305, 2], '76_R0': [4.4702160358428955, 1], '79_M1': [3.983992099761963, 2], '77_R0': [2.1674113273620605, 2], '79_M2': [4.9864137172698975, 2], '77_R1': [2.166656732559204, 2], '79_M3': [4.9847753047943115, 2], '80_M0': [3.276538133621216, 1], '78_R0': [3.465017080307007, 1], '80_M1': [4.982052326202393, 2], '80_M2': [4.277522563934326, 1], '80_M3': [4.980536937713623, 2], '81_M0': [4.275025367736816, 1], '81_M1': [4.978091239929199, 2], '81_M2': [4.273385047912598, 1], '81_M3': [1.969674825668335, 2], '82_M0': [2.2668347358703613, 1], '82_M1': [4.972102403640747, 2], '82_M2': [3.266292095184326, 1], '83_M0': [4.665912389755249, 1], '79_R0': [1.164975881576538, 2], '79_R1': [4.469877004623413, 1], '80_R0': [2.4647932052612305, 1], '84_M0': [3.751762628555298, 1], '84_M1': [4.752477645874023, 1], '84_M2': [4.449530601501465, 2], '81_R0': [5.168494701385498, 2], '84_M3': [3.4424796104431152, 2], '82_R0': [1.4634747505187988, 1], '82_R1': [4.468165159225464, 1], '85_M0': [4.524523735046387, 1], '83_R0': [4.166003465652466, 2], '85_M1': [4.221436262130737, 2], '85_M2': [4.518152952194214, 1], '85_M3': [5.520182847976685, 1], '86_M0': [1.2080743312835693, 2], '86_M1': [3.5151309967041016, 1], '86_M2': [3.209754705429077, 2], '86_M3': [1.2052767276763916, 2], '87_M0': [3.51153302192688, 1], '84_R0': [3.163447380065918, 2], '88_M0': [3.2041680812835693, 2], '88_M1': [4.509482383728027, 1], '89_M0': [4.306598901748657, 1], '89_M1': [3.305398464202881, 1], '90_M0': [1.8436245918273926, 1], '90_M1': [1.5399999618530273, 2], '91_M0': [3.846064805984497, 1], '85_R0': [3.1624810695648193, 2], '91_M1': [3.543195962905884, 2], '91_M2': [1.8409197330474854, 1], '85_R1': [1.1588220596313477, 2], '91_M3': [3.540471315383911, 2], '92_M0': [4.845400333404541, 1], '86_R0': [1.1592226028442383, 2], '93_M0': [5.401505470275879, 1], '87_R0': [1.4608397483825684, 1], '88_R0': [2.4615023136138916, 1], '93_M1': [4.096227169036865, 2], '89_R0': [2.1588287353515625, 2], '89_R1': [2.461778163909912, 1], '93_M2': [1.0884568691253662, 2], '90_R0': [3.1609699726104736, 2], '90_R1': [4.466528654098511, 1], '94_M0': [2.0915591716766357, 2], '91_R0': [1.458078145980835, 1], '94_M1': [4.093512535095215, 2], '92_R0': [3.4629721641540527, 1], '92_R1': [1.4574816226959229, 1], '94_M2': [2.0892648696899414, 2], '93_R0': [4.463355302810669, 1], '95_M0': [3.091237783432007, 2], '95_M1': [3.3961610794067383, 1], '95_M2': [3.09161376953125, 2], '95_M3': [1.3923094272613525, 1], '96_M0': [4.094395637512207, 2], '96_M1': [3.3970885276794434, 1], '94_R0': [3.4625051021575928, 1], '94_R1': [4.464969635009766, 1], '97_M0': [4.096482992172241, 2], '97_M1': [2.091608762741089, 2], '97_M2': [4.401461362838745, 1], '95_R0': [4.466176271438599, 1], '98_M0': [3.0958545207977295, 2], '95_R1': [4.162302255630493, 2], '98_M1': [1.0916244983673096, 2], '98_M2': [2.39819598197937, 1], '96_R0': [3.462834119796753, 1], '99_M0': [2.0935657024383545, 2], '96_R1': [4.158342361450195, 2], '99_M1': [5.097845554351807, 2], '99_M2': [4.399652481079102, 1], '97_R0': [4.462747573852539, 1], '98_R0': [1.4556076526641846, 1], '99_M3': [5.096788644790649, 2], '98_R1': [2.151702642440796, 2], '99_R0': [1.4532191753387451, 1], '99_R1': [2.454449415206909, 1]}
+
+JOB LOGS:
+ {'0': 7.421510696411133, '1': 7.014564037322998, '2': 4.0077064037323, '3': 8.01269793510437, '4': 12.543497323989868, '5': 7.529659032821655, '6': 10.357301235198975, '7': 8.013486385345459, '8': 6.458031892776489, '9': 9.464824676513672, '10': 10.382386207580566, '11': 7.374063491821289, '12': 9.333422660827637, '13': 10.031986951828003, '14': 10.329272270202637, '15': 9.022129774093628, '16': 8.320908069610596, '17': 11.32588815689087, '18': 9.014955759048462, '19': 11.052486658096313, '20': 9.324083805084229, '21': 8.088747024536133, '22': 10.093135356903076, '23': 6.081405878067017, '24': 11.091259002685547, '25': 12.092863082885742, '26': 8.08015751838684, '27': 5.071356534957886, '28': 6.071944713592529, '29': 9.07495379447937, '30': 8.91218900680542, '31': 10.215282917022705, '32': 11.212440490722656, '33': 11.208824872970581, '34': 7.197979927062988, '35': 10.202868700027466, '36': 10.899988889694214, '37': 12.20391035079956, '38': 9.19711422920227, '39': 8.193182229995728, '40': 11.19907021522522, '41': 3.8825466632843018, '42': 11.033157110214233, '43': 9.324765682220459, '44': 9.321414947509766, '45': 8.314731121063232, '46': 8.316380023956299, '47': 10.318564653396606, '48': 10.316993951797485, '49': 10.315624237060547, '50': 10.01283884048462, '51': 11.015140295028687, '52': 12.01341962814331, '53': 9.304256439208984, '54': 14.014900922775269, '55': 11.303521871566772, '56': 12.304733753204346, '57': 9.853335857391357, '58': 10.079792261123657, '59': 11.105758905410767, '60': 10.102445602416992, '61': 13.108502626419067, '62': 11.103886365890503, '63': 11.101463079452515, '64': 10.803383350372314, '65': 11.101109743118286, '66': 12.098965167999268, '67': 13.80091381072998, '68': 12.094499826431274, '69': 11.793078184127808, '70': 9.087043762207031, '71': 13.09292221069336, '72': 13.792903423309326, '73': 10.785660982131958, '74': 13.090700626373291, '75': 11.086493015289307, '76': 11.586914777755737, '77': 9.285279273986816, '78': 9.581653833389282, '79': 15.306829452514648, '80': 10.293498516082764, '81': 12.99327802658081, '82': 11.28686261177063, '83': 10.377720832824707, '84': 10.463230609893799, '85': 11.235340118408203, '86': 10.225608348846436, '87': 8.521796941757202, '88': 9.52084493637085, '89': 8.317167520523071, '90': 10.863563060760498, '91': 7.856626987457275, '92': 8.857393503189087, '93': 10.414724826812744, '94': 11.416254043579102, '95': 11.110910654067993, '96': 11.110641956329346, '97': 11.416663408279419, '98': 8.106231212615967, '99': 11.416228771209717}
+
+ ========================================================================================================= 
+
+
+
+ #########################################################################################################
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  EXIT  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+######################################################################################################### 
+
