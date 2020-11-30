@@ -44,7 +44,7 @@ def launchTask(w_id, job_id, job_type, task):
 	task['job_type'] = job_type
 	
 	task_logs_lock.acquire()
-	task_logs[task['task_id']] = [time.time(), config[w_id]['worker_id']]	# Add task start time to log
+	task_logs[task['task_id']] = [0, config[w_id]['worker_id']]	# Add task start time to log
 	task_logs_lock.release()
 	message = json.dumps(task)							# Send task to Worker
 	conn.send(message.encode())
