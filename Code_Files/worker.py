@@ -7,7 +7,7 @@ import time
 def execution():
 	exit_counter = 10      # So that it breaks from loop after 10s of no activity.
 				# TO BE REMOVED LATER!!!
-	while(exit_counter):
+	while(True):
 		for i in e_pool:
 			cur_time = time.time()				# Check every task in e_pool
 			if(cur_time >= i[1]['end_time']):	# If current_time > end_time set earlier, task complete
