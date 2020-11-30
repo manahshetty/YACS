@@ -5,19 +5,27 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# Run: python3 metrics.py <algorithm> <number of requests - 100 or 500>
+
 allFiles = 0
 
+requests = sys.argv[2]
+
+if requests not in ['100','500']:
+	print("The second system argument passed is incorrect.\nRun again with either 100 or 500 requests\nProgram terminated.")
+	exit(0)
+
 if(sys.argv[1] == 'RANDOM'):
-	fileName = "100Requests/logs_random.txt"
+	fileName = requests + "Requests"+"/logs_random.txt"
 elif(sys.argv[1] == 'RR'):
-	fileName = "100Requests/logs_roundRobin.txt"
+	fileName = requests + "Requests"+"/logs_roundRobin.txt"
 elif sys.argv[1] == "LL":
-	fileName = "100Requests/logs_leastLoaded.txt"
+	fileName = requests + "Requests"+"/logs_leastLoaded.txt"
 elif sys.argv[1] == "ALL": # done for graph purposes
-	fileNames = ["100Requests/logs_random.txt","100Requests/logs_roundRobin.txt","100Requests/logs_leastLoaded.txt"]
+	fileNames = [requests + "Requests"+"/logs_random.txt",requests + "Requests"+"/logs_roundRobin.txt",requests + "Requests"+"/logs_leastLoaded.txt"]
 	allFiles = 1
 else:
-	print("The system argument passed is incorrect. \nPlease run the program again with one of the following options: RANDOM/RR/LL/ALL")
+	print("The first system argument passed is incorrect. \nPlease run the program again with one of the following options: RANDOM/RR/LL/ALL")
 	print("Program terminated.")
 	exit(0)
 
@@ -60,8 +68,18 @@ def plot_bar(df):
 	ax.set_xlabel("Worker")
 	plt.title("Number of Tasks per Worker for each algorithm")
 	# ax.set_xlim(0,1200)
+	plt.savefig("tasksvsworker.png")
 	plt.show()
 
+def scatter(hue, file):
+	sns.set(style='whitegrid', font_scale=0.5)
+	fig, ax = plt.subplots(figsize=(4.5,4.5))
+	sns.scatterplot(ax = ax, data=grouped, x='number_of_tasks',y='mean_time',hue=hue)
+	ax.set_xlabel("Number of Tasks")
+	ax.set_ylabel("Average Time taken (in s)")
+	plt.title("Number of tasks vs. Time, grouped by "+ hue)
+	plt.savefig(file)
+	plt.show()
 
 if allFiles == 1:
 	logs = []
@@ -85,10 +103,9 @@ if allFiles == 1:
 	grouped = grouped.reset_index()
 	print(grouped.head(10))
 
-	sns.scatterplot(data=grouped, x='number_of_tasks',y='mean_time',hue='algorithm')
-	plt.title("Number of tasks vs. Time for each algorithm")
-	plt.show()
 	plot_bar(grouped)
+	scatter('algorithm', 'timevstasks_algo.png')
+	scatter('worker', 'timevstasks_worker.png')
 
 else:
 	logs = getLogs(fileName)
