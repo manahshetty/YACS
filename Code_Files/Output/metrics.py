@@ -3,74 +3,84 @@ import sys
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
+
+allFiles = 0
 
 if(sys.argv[1] == 'RANDOM'):
 	fileName = "logs_random.txt"
 elif(sys.argv[1] == 'RR'):
 	fileName = "logs_roundRobin.txt"
-else:
+elif sys.argv[1] == "LL":
 	fileName = "logs_leastLoaded.txt"
+elif sys.argv[1] == "ALL": # done for graph purposes
+	fileNames = ["logs_random.txt","logs_roundRobin.txt","logs_leastLoaded.txt"]
+	allFiles = 1
+else:
+	print("The system argument passed is incorrect. \nPlease run the program again with one of the following options: RANDOM/RR/LL/ALL")
+	print("Program terminated.")
+	exit(0)
+
+def getLogs(fileName):
+	with open(fileName) as fp:
+		data = fp.readline()
+		task_logs = json.loads(data)
+		data = fp.readline()
+		job_logs = json.loads(data)
+		algorithm = fileName.split('_')[1].split(".")[0].upper()
+		t_logs = {'algorithm':[],'job_id': [],'task_id': [], 'time_taken': [], 'worker':[]}
+		for key,value in task_logs.items():
+			job = key.split("_")[0]
+			t_logs['algorithm'].append(algorithm)
+			t_logs["job_id"].append(job)
+			t_logs['task_id'].append(key)
+			t_logs['time_taken'].append(value[0])
+			t_logs['worker'].append(value[1])
+
+		return t_logs
+
+def calcMetrics(task_logs):
+	print("===========================================================================\n")
+	print('Mean time taken for task completion:', np.mean(task_logs['time_taken']), '\n')
+	print('Median time taken for task completion:',np.median(task_logs['time_taken']), '\n')
+	print("===========================================================================\n")
+
+def plot(df):
+	sns.set(style='whitegrid', font_scale=0.5)
+	fig, ax = plt.subplots(figsize=(4.5,4.5))
+	sns.barplot(ax=ax,
+		data=df,
+		x="worker", y="number_of_tasks", hue="algorithm", palette='deep')
+	ax.set_ylabel("Number of Tasks")
+	ax.legend()
+	ax.set_xlabel("Worker")
+	plt.title("Number of Tasks per Worker for each algorithm")
+	# ax.set_xlim(0,1200)
+	plt.show()
+
+
+if allFiles == 1:
+	logs = []
+	for i in fileNames:
+		logs.append(getLogs(i))
 	
-with open(fileName) as fp:
-	data = fp.readline()
-	task_logs = json.loads(data)
-	data = fp.readline()
-	job_logs = json.loads(data)
+	logs_random = pd.DataFrame(logs[0], index=None, columns=['algorithm','job_id','task_id','time_taken','worker'])
+	logs_rr = pd.DataFrame(logs[1], index=None, columns=['algorithm','job_id','task_id','time_taken','worker'])
+	logs_ll = pd.DataFrame(logs[2], index=None, columns=['algorithm','job_id','task_id','time_taken','worker'])
+
+	tasklogs_df = logs_random.append(logs_rr)
+	tasklogs_df = tasklogs_df.append(logs_ll)
+
+	tasklogs_df = tasklogs_df[['worker','algorithm','task_id']]
+	grouped = tasklogs_df.groupby(['worker','algorithm']).agg(number_of_tasks=('task_id','count'))
+	grouped = grouped.reset_index()
+
+	plot(grouped)
+
+else:
+	logs = getLogs(fileName)
+	algorithm = fileName.split('_')[1].split('.')[0].upper()
+
+	print(f"Metrics for {algorithm}\n")
+	calcMetrics(logs)
 	
-print("\n===========================================================================\n")
-
-t_logs = {'job_id': [],'task_id': [], 'time_taken': [], 'worker':[]}
-for key,value in task_logs.items():
-	job = key.split("_")[0]
-	t_logs["job_id"].append(job)
-	t_logs['task_id'].append(key)
-	t_logs['time_taken'].append(value[0])
-	t_logs['worker'].append(value[1])
-
-print('Mean time taken for task completion:', np.mean(t_logs['time_taken']), '\n')
-print('Median time taken for task completion:',np.median(t_logs['time_taken']), '\n')
-
-print("\n===========================================================================\n")
-
-
-tasklogs_df = pd.DataFrame(t_logs,index=None,columns=['job_id','task_id','time_taken','worker'])
-
-n_tasks_per_worker = sorted(tasklogs_df.worker.value_counts())
-timetaken_per_worker = [sum(tasklogs_df[tasklogs_df['worker']==i]['time_taken']) for i in n_tasks_per_worker]
-worker = [1,2,3]
-
-
-# x = np.arange(len(labels))  # the label locations
-# width = 0.35  # the width of the bars
-
-# fig, ax = plt.subplots()
-# rects1 = ax.bar(x - width/2, men_means, width, label='Men')
-# rects2 = ax.bar(x + width/2, women_means, width, label='Women')
-
-# # Add some text for labels, title and custom x-axis tick labels, etc.
-# ax.set_ylabel('Scores')
-# ax.set_title('Scores by group and gender')
-# ax.set_xticks(x)
-# ax.set_xticklabels(labels)
-# ax.legend()
-
-'''
-def autolabel(rects):
-    """Attach a text label above each bar in *rects*, displaying its height."""
-    for rect in rects:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # 3 points vertical offset
-                    textcoords="offset points",
-                    ha='center', va='bottom')
-
-
-autolabel(rects1)
-autolabel(rects2)
-
-fig.tight_layout()
-
-plt.show()
-'''
-
