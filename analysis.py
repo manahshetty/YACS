@@ -52,7 +52,7 @@ def calcMetricsJob(j_logs):
 	print('Median time taken for job completion:',np.median(list(j_logs.values())), 'seconds\n')
 	print("===========================================================================\n")
 
-def plot_bar(df,x,y):
+def plot_bar(df,x,y, algo):
 	sns.set(style='whitegrid', font_scale=0.5)
 	fig, ax = plt.subplots(figsize=(4.5,4.5))
 	sns.barplot(ax=ax,
@@ -61,9 +61,9 @@ def plot_bar(df,x,y):
 	ax.set_ylabel(y)
 	# ax.legend()
 	ax.set_xlabel(x)
-	plt.title(x + " vs " + y)
+	plt.title(x + " vs " + y + ' - ' + algo)
 	# ax.set_xlim(0,1200)
-	filename = y + "_" + x + ".png"
+	filename = "Graphs/" + algo + '_' + y + "_" + x + ".png"
 	plt.savefig(filename)
 	plt.show()
 
@@ -80,11 +80,11 @@ calcMetricsTask(logs)
 calcMetricsJob(j_logs)
 
 # print(mean_logs.head())
-plot_bar(mean_logs, 'worker','mean_time')
-plot_bar(median_logs, 'worker', 'median_time')
+plot_bar(mean_logs, 'worker','mean_time', algorithm)
+plot_bar(median_logs, 'worker', 'median_time', algorithm)
 
 # print(tasks_mean.head())
 
 # sns.scatterplot(data=tasks_mean, x='')
-sns.scatterplot(data=logs, x='time_taken', y='job_id', hue='worker')
-plt.show()
+# sns.scatterplot(data=logs, x='time_taken', y='job_id', hue='worker')
+# plt.show()
