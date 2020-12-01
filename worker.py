@@ -10,7 +10,7 @@ def execution():
 		for i in e_pool:
 			cur_time = time.time()				# Check every task in e_pool
 			if(cur_time >= i[1]['end_time']):		# If current_time > end_time set earlier, task complete
-				#i[1]['end_time'] = cur_time
+				i[1]['end_time'] = cur_time
 				w_id = i[0]
 				task_id = i[1]['task_id']
 				job_id = i[1]['job_id']
@@ -22,7 +22,7 @@ def execution():
 				
 				print("Completed Task: ", task_id)
 				sendUpdate(job_id, task_id, w_id, job_type, i[1]['start_time'], i[1]['end_time'])	# Send update to Master
-		time.sleep(1)
+		#time.sleep(1)
 
 def sendUpdate(job_id, task_id, w_id, job_type, start_time, end_time):
 
