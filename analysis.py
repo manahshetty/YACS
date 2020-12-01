@@ -79,7 +79,7 @@ print(f"Metrics for {algorithm}\n")
 calcMetricsTask(logs)
 calcMetricsJob(j_logs)
 
-print(mean_logs.head())
+# print(mean_logs.head())
 plot_bar(mean_logs, 'worker','mean_time', algorithm)
 plot_bar(median_logs, 'worker', 'median_time', algorithm)
 
@@ -106,7 +106,7 @@ if ans.upper()=="Y":
 
 	new_logs = new_logs[['worker', 'task_id', 'R_time', 'RR_time','LL_time']]
 	mean_time = new_logs.groupby(['worker']).mean().reset_index()
-	# print(mean_time.head())
+	print(mean_time.head())
 
 	sns.heatmap(data=mean_time.iloc[:,1:], xticklabels=[1,2,3], yticklabels=False)
 	plt.xlabel("Workers")
