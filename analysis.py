@@ -38,7 +38,7 @@ def getLogs(fileName):
 			t_logs['time_taken'].append(value[0])
 			t_logs['worker'].append(value[1])
 
-		return t_logs
+		return (t_logs, job_logs)
 
 def calcMetrics(task_logs):
 	print("===========================================================================\n")
@@ -46,25 +46,22 @@ def calcMetrics(task_logs):
 	print('Median time taken for task completion:',np.median(task_logs['time_taken']), 'seconds\n')
 	print("===========================================================================\n")
 
-def plot_bar(df, att):
+def plot_bar(df,x,y):
 	sns.set(style='whitegrid', font_scale=0.5)
 	fig, ax = plt.subplots(figsize=(4.5,4.5))
 	sns.barplot(ax=ax,
 		data=df,
-		x="worker", y=att,palette='deep')
-	ax.set_ylabel(att)
+		x=x, y=y,palette='deep')
+	ax.set_ylabel(y)
 	# ax.legend()
-	ax.set_xlabel("Worker")
-	if att == "mean_time":
-		plt.title("Mean Time per Worker")
-	else:
-		plt.title("Median Time per Worker")
+	ax.set_xlabel(x)
+	plt.title(x + " vs " + y)
 	# ax.set_xlim(0,1200)
-	filename = att + '_workers.png'
+	filename = y + "_" + x + ".png"
 	plt.savefig(filename)
 	plt.show()
 
-logs = getLogs(fileName)
+logs, j_logs = getLogs(fileName)
 logs = pd.DataFrame(logs,columns=['algorithm','job_id','task_id','time_taken','worker'])
 algorithm = fileName.split('_')[1].split('.')[0].upper()
 
@@ -76,6 +73,11 @@ print(f"Metrics for {algorithm}\n")
 calcMetrics(logs)
 
 # print(mean_logs.head())
-plot_bar(mean_logs, 'mean_time')
-plot_bar(median_logs, 'median_time')
-	
+plot_bar(mean_logs, 'worker','mean_time')
+plot_bar(median_logs, 'worker', 'median_time')
+
+# print(tasks_mean.head())
+
+# sns.scatterplot(data=tasks_mean, x='')
+sns.scatterplot(data=logs, x='time_taken', y='job_id', hue='worker')
+plt.show()
