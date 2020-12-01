@@ -30,8 +30,7 @@ def launchTask(w_id, job_id, job_type, task):
 	config_lock.release()
 	
 	c = [{'worker_id' : i['worker_id'] , 'slots' : i['slots']} for i in config]
-	#print("Config is now: ", config, "\n\n")
-	print("Config is now: ", c, "\n\n")
+	print("STATUS: ", c, "\n\n")
 	
 	if(w_id == 0):							# Choose socket/port based on Worker
 		conn, addr = taskLaunchSocket1.accept()
@@ -51,7 +50,7 @@ def launchTask(w_id, job_id, job_type, task):
 	conn.close()
 
 def random(job_id, tasks, job_type):
-	#print("I schedule at random.\n")
+
 	for task in tasks:
 		config_lock.acquire()						
 		w_id = np.random.randint(0,3)				
@@ -68,30 +67,31 @@ def random(job_id, tasks, job_type):
 		
 
 def roundRobin(job_id, tasks, job_type):
-	#print("I like Round Robin.\n")
+
 	for task in tasks:
 		config_lock.acquire()
-		#print("----- ", threading.current_thread().name, " RR acquired lock.")
 		config2 = copy.deepcopy(config)
 		config2.sort(key = lambda x: x['worker_id'])
+		
 		w_id = 0
 		while(config2[w_id]['slots']==0):				# While current worker has no free slots
-			w_id = (w_id+1)%3					# pick the next
 			config_lock.release()
-			#print("----- ", threading.current_thread().name, " RR released lock.")
 			time.sleep(1)
+			
+			w_id = (w_id+1)%3					# pick the next
+			
 			config_lock.acquire()
-			#print("----- ", threading.current_thread().name, " RR acquired lock.")
 			config2 = copy.deepcopy(config)
 			config2.sort(key = lambda x: x['worker_id'])
 			
-		#print(threading.current_thread().name, " : ", task['task_id'], " allotted to Worker: ", config[w_id]['worker_id'])
+		print(task['task_id'], " allotted to Worker: ", config[w_id]['worker_id'])
+		
 		config_lock.release()
-		#print("----- ", threading.current_thread().name, " RR released lock outside loop")
+
 		launchTask(w_id, job_id, job_type, task)
 		
 def leastLoaded(job_id, tasks, job_type):
-	#print("I prefer my loads light.\n")
+
 	for task in tasks:
 		config_lock.acquire()
 		config2 = copy.deepcopy(config)					
@@ -119,31 +119,13 @@ def pickScheduler(job_id, tasks, job_type):					# Calls scheduling algo based on
 	else:
 		leastLoaded(job_id, tasks, job_type)
 		
-'''		
 def monitorReduce():
 	scheduled = []						# Keep track of reduce tasks that have already been schd.
-	while(1):
-		if(len(scheduling_pool)>0):
-			print(threading.current_thread().name, " Acquiring sch pool lock in MONITOR REDUCE.")
-			scheduling_pool_lock.acquire()
-			print(threading.current_thread().name, " Acquired sch pool lock in MONITOR REDUCE.")
-			for job_id, status in scheduling_pool.items():
-				if(len(status[1]) == 0 and job_id not in scheduled):	# If all m_tasks are complete + not already been schd.
-					print(threading.current_thread().name, " Scheduling Reduce Job: ", job_id)
-					scheduled.append(job_id)			# Add task to list of schd. tasks
-					pickScheduler(job_id, status[0], 'R')		# Pick scheduling algo based on CL arg
-					print(threading.current_thread().name, " Scheduled reduce job: ", job_id)
-					
-			scheduling_pool_lock.release()
-			print(threading.current_thread().name, " Released sch pool lock in MONITOR REDUCE.")
-		time.sleep(1)							# Wait for 1s before checking again.
-'''		
-
-def monitorReduce():
-	scheduled = []						# Keep track of reduce tasks that have already been schd.
+	
 	scheduling_pool_lock.acquire()
 	scheduling_pool_copy = copy.deepcopy(scheduling_pool)	# Create a copy so size doesn't change during iter
 	scheduling_pool_lock.release()
+	
 	while(1):
 		if(len(scheduling_pool_copy)>0):
 			for job_id, status in scheduling_pool_copy.items():
@@ -152,6 +134,7 @@ def monitorReduce():
 					pickScheduler(job_id, status[0], 'R')		# Pick scheduling algo based on CL arg
 
 		time.sleep(1)	
+		
 		scheduling_pool_lock.acquire()
 		scheduling_pool_copy = copy.deepcopy(scheduling_pool)
 		scheduling_pool_lock.release()	
@@ -208,15 +191,13 @@ def updateSlots():
 		w_id = worker_id_to_index[update['w_id']]				# Convert the worker_id to index into config
 		
 		config_lock.acquire()
-		#print("----- ", threading.current_thread().name, " Update acquired lock.")
 		config[w_id]['slots']+=1						# Increment free slots on resp. worker
 		config_lock.release()
-		#print("----- ", threading.current_thread().name, " RR acquired lock.")
+
 		
-		print(update['task_id'], " freed from Worker: ", config[w_id]['worker_id'])
+		print(update['task_id'], " completed by Worker: ", config[w_id]['worker_id'])
 		c = [{'worker_id' : i['worker_id'] , 'slots' : i['slots']} for i in config]
-		#print("Config is now: ", config, "\n\n")
-		print("Config is now: ", c, "\n\n")
+		print("STATUS: ", c, "\n\n")
 	
 		
 		if(update['job_type'] == 'M'):						# If it was a map task
@@ -257,8 +238,14 @@ def updateSlots():
 
 # Initialize Configuration.
 config, worker_id_to_index = initConfig()
-config_lock = threading.Lock()		
-print(config, "\n")
+config_lock = threading.Lock()
+print("="*105, "\n")
+print("\t"*5, "MASTER INITIALIZED")
+print("\t"*4, "     WORKERS CAN BE INITIATED\n")
+print("="*105, "\n")
+		
+print("INITIAL STATUS: ", config, "\n")
+
 
 # Initialize Sockets
 # 5000 - Listen to Job requests
@@ -287,6 +274,7 @@ taskLaunchSocket2.listen(1)
 taskLaunchSocket3 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 taskLaunchSocket3.bind(("localhost", config[2]['port']))
 taskLaunchSocket3.listen(1)
+
 
 # Initialize time logs
 job_logs = {}			# <job_id> : time
