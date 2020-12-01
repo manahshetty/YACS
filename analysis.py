@@ -40,10 +40,16 @@ def getLogs(fileName):
 
 		return (t_logs, job_logs)
 
-def calcMetrics(task_logs):
+def calcMetricsTask(task_logs):
 	print("===========================================================================\n")
 	print('Mean time taken for task completion:', np.mean(task_logs['time_taken']), 'seconds\n')
 	print('Median time taken for task completion:',np.median(task_logs['time_taken']), 'seconds\n')
+	print("===========================================================================\n")
+	
+def calcMetricsJob(j_logs):
+	print("===========================================================================\n")
+	print('Mean time taken for job completion:', np.mean(list(j_logs.values())), 'seconds\n')
+	print('Median time taken for job completion:',np.median(list(j_logs.values())), 'seconds\n')
 	print("===========================================================================\n")
 
 def plot_bar(df,x,y):
@@ -70,7 +76,8 @@ mean_logs = logs.groupby('worker').agg(mean_time=('time_taken','mean')).reset_in
 median_logs = logs.groupby('worker').agg(median_time=('time_taken','median')).reset_index()
 
 print(f"Metrics for {algorithm}\n")
-calcMetrics(logs)
+calcMetricsTask(logs)
+calcMetricsJob(j_logs)
 
 # print(mean_logs.head())
 plot_bar(mean_logs, 'worker','mean_time')
