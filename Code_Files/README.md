@@ -1,10 +1,11 @@
 > **Execution**
 >  Execute the files in the following order, on 5 separate terminals.
 >  1. python3 master.py config.json <scheduling algorithm>                        # <scheduling algorithm> = RR or RANDOM or LL
->  2. python3 requests.py <no_of_requests>
->  3. python3 worker.py 4000 1
->  4. python3 worker.py 4001 2
->  5. python3 worker.py 4002 3
+      > Wait for the master to be initialized before procceeding.
+>  2. python3 worker.py 4000 1
+>  3. python3 worker.py 4001 2
+>  4. python3 worker.py 4002 3
+>  5. python3 requests.py <no_of_requests>
 >  
 >  ( 3, 4, 5 => python3 worker.py <port_number> <worker_id> )
   
