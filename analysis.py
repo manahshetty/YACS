@@ -79,12 +79,56 @@ print(f"Metrics for {algorithm}\n")
 calcMetricsTask(logs)
 calcMetricsJob(j_logs)
 
-# print(mean_logs.head())
+print(mean_logs.head())
 plot_bar(mean_logs, 'worker','mean_time', algorithm)
 plot_bar(median_logs, 'worker', 'median_time', algorithm)
 
-# print(tasks_mean.head())
 
-# sns.scatterplot(data=tasks_mean, x='')
-# sns.scatterplot(data=logs, x='time_taken', y='job_id', hue='worker')
-# plt.show()
+# For the HeatMaps
+
+print()
+ans = input("Plot heatmaps? [Y/N] (Make sure all log files are present)")
+
+if ans.upper()=="Y":
+	files = ['logs_random.txt','logs_roundRobin.txt','logs_leastLoaded.txt']
+	logs = []
+	try: 
+		for i in files:
+			logs.append(getLogs(i))
+	except:
+		print("Not all log files are present. Please check and run this python file again.\n")
+		exit(0)
+	
+	new_logs = pd.DataFrame(logs[0][0],columns=['algorithm','job_id','task_id','time_taken','worker'])
+	new_logs["R_time"] = logs[0][0]['time_taken']
+	new_logs['RR_time'] = logs[1][0]['time_taken']
+	new_logs['LL_time'] = logs[2][0]['time_taken']
+
+	new_logs = new_logs[['worker', 'task_id', 'R_time', 'RR_time','LL_time']]
+	mean_time = new_logs.groupby(['worker']).mean().reset_index()
+	# print(mean_time.head())
+
+	sns.heatmap(data=mean_time.iloc[:,1:], xticklabels=[1,2,3], yticklabels=False)
+	plt.xlabel("Workers")
+	plt.ylabel('Random \t Round Robin \t Least Loaded')
+	plt.title("Color signifies the mean time")
+	plt.savefig("Graphs/meantime_worker.png")
+	plt.show()
+
+	new_log = new_logs.groupby(['worker']).agg(r_tasks=('task_id','count')).reset_index()
+	rr_logs = pd.DataFrame(logs[1][0],columns=['algorithm','job_id','task_id','time_taken','worker']).groupby(['worker']).agg(rr_tasks=('task_id','count')).reset_index()
+	ll_logs = pd.DataFrame(logs[2][0],columns=['algorithm','job_id','task_id','time_taken','worker']).groupby(['worker']).agg(ll_tasks=('task_id','count')).reset_index()
+
+	new_log['rr_tasks'] = rr_logs['rr_tasks']
+	new_log['ll_tasks'] = ll_logs['ll_tasks']
+
+	sns.heatmap(data=new_log.iloc[:,1:],xticklabels=[1,2,3], yticklabels=False)
+	plt.xlabel("Workers")
+	plt.ylabel('Random \t Round Robin \t Least Loaded')
+	plt.title("Color signifies the number of tasks")
+	plt.savefig("Graphs/numtasks_worker.png")
+	plt.show()
+
+else:
+	print("\n\nProgram Terminated")
+	exit(0)
