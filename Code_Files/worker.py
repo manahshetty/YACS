@@ -10,7 +10,7 @@ def execution():
 		for i in e_pool:
 			cur_time = time.time()				# Check every task in e_pool
 			if(cur_time >= i[1]['end_time']):		# If current_time > end_time set earlier, task complete
-				i[1]['end_time'] = cur_time
+				#i[1]['end_time'] = cur_time
 				w_id = i[0]
 				task_id = i[1]['task_id']
 				job_id = i[1]['job_id']
@@ -19,6 +19,7 @@ def execution():
 				e_lock.acquire()
 				e_pool.remove(i)			# Remove task from e_pool
 				e_lock.release()
+				
 				print("Completed Task: ", task_id)
 				sendUpdate(job_id, task_id, w_id, job_type, i[1]['start_time'], i[1]['end_time'])	# Send update to Master
 		time.sleep(1)
@@ -48,7 +49,7 @@ def worker1(port, w_id):
 			r = taskLaunchSocket.recv(1024)
 		if(req):
 			request = json.loads(req)
-			print("Received Task: ", request['task_id'])
+			print("Received Task : ", request['task_id'])
 			request['start_time'] = time.time()
 			request['end_time'] = request['start_time'] + request['duration']	# Add task completion time to request dict
 			
