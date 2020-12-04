@@ -20,7 +20,9 @@ Execute the following simultaneously on five different terminals
 ```python3 master.py config.json <algo>```
 
 ```python3 worker.py 4000 1```
+
 ```python3 worker.py 4001 2 ```
+
 ```python3 worker.py 4002 3```
 
 ```python3 requests.py <number of requests>```
