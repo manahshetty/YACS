@@ -142,6 +142,8 @@ def monitorReduce():
 # Thread 1 addresses Job Requests
 def addressRequests():
 	global job_count
+	global start_time
+	flag = 0
 	while(1):
 		try:
 			conn, addr = jRSocket.accept()
@@ -152,7 +154,10 @@ def addressRequests():
 		while r:							# If len(req) > 1024b
 			req += r.decode()
 			r = conn.recv(1024)
-		request = json.loads(req)					
+		request = json.loads(req)	
+		if(flag == 0):
+			start_time = time.time()
+			flag = 1				
 		conn.close()
 		
 		job_count_lock.acquire()
@@ -186,6 +191,7 @@ def updateSlots():
 		
 		task_logs_lock.acquire()
 		task_logs[update['task_id']][0] = update['end_time'] - update['start_time'] 	# Record end time and add to task log
+		task_logs[update['task_id']].append([update['start_time'] - start_time, update['end_time'] - start_time])
 		task_logs_lock.release()
 
 		w_id = worker_id_to_index[update['w_id']]				# Convert the worker_id to index into config
@@ -284,6 +290,8 @@ task_logs_lock = threading.Lock()
 
 job_count = 0
 job_count_lock = threading.Lock()
+
+start_time = 0
 
 # Initialize shared data structure.
 # Keeps record of job requests yet to complete exec
