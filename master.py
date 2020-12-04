@@ -259,7 +259,7 @@ print("INITIAL STATUS: ", config, "\n")
 # config[i][2] - Launch Tasks on Worker i
 
 jRSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-jRSocket.settimeout(15.0)
+jRSocket.settimeout(60.0)
 jRSocket.bind(("localhost", 5000))
 jRSocket.listen(1)
 
